@@ -15,6 +15,10 @@ app.include_router(trip_router.router)
 app.include_router(maintenance_router.router)
 app.include_router(dashboard_router.router)
 
+origins = [
+    "http://localhost:5173",   # your frontend dev server
+]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
