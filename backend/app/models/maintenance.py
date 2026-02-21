@@ -1,5 +1,6 @@
-from sqlalchemy import Column, Integer, ForeignKey, String, Date
+from sqlalchemy import Column, Integer, ForeignKey, String, Date, Boolean
 from app.core.database import Base
+
 
 class MaintenanceLog(Base):
     __tablename__ = "maintenance_logs"
@@ -9,3 +10,5 @@ class MaintenanceLog(Base):
     description = Column(String, nullable=False)
     cost = Column(Integer, nullable=False)
     date = Column(Date, nullable=False)
+
+    is_completed = Column(Boolean, default=False)
