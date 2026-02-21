@@ -28,7 +28,4 @@ It allows fleet managers to manage:
 - Backend deployed on Render
 - Frontend running locally (or can be deployed to Vercel/Netlify)
 
----
-
-## 📦 Project Structure
 
